@@ -2,17 +2,32 @@
 # Welcome to my website!
 ## Here you can read about me and see my resume and projects
 ### This site is still under constuction
+## Table of Contents
+- [Contact](https://www.tristinxie.com/#here-is-my-contact-information)
+- [Projects](https://www.tristinxie.com/#the-following-are-a-list-of-some-of-my-previous-projects)
+- [Bio](https://www.tristinxie.com/#short-bio)
+- [To do list](https://www.tristinxie.com/#to-do-list-for-finishing-my-website)
+
 **Here is my contact information**
+
 - Email: tyx001@ucsd.edu
-  - Personal Email: tristinyxie@gmail.com
-- github: [tristinxie](https://www.github.com/tristinxie)
+
+    - Personal Email: tristinyxie@gmail.com
+        
+        - Email alias: tyxie@ucsd.edu
+
+- GitHub: [tristinxie](https://www.github.com/tristinxie)
+
 - Linkedin: [Tristin Xie](https://www.linkedin.com/in/tristin-xie-245918167/)
+
 - Google voice number: 1-657-333-6223
+
 - [Resume](https://drive.google.com/file/d/1elPOPi91Ch-EXuQ-9g71FXFA9HOJ2Oxr/view?usp=sharing)
+
 
 ***To get more personalized contact information, email me***
 
-## The following are a list of my previous projects
+## The following are a list of some of my previous projects
 For any of these projects you can download them using `git clone`. You can run them with their respective language: `python3` or `npm`.
 
 1. [ACM Teammate Finder](https://github.com/LelandTLong/ACM_Project)
