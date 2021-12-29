@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+	.course-link {
+		@apply underline text-blue-500 visited:text-purple-500
+	}
+	.about-section {
+		@apply flex items-center pl-5 pr-5 justify-evenly bg-blue-300
+	}
+	.contact-icon {
+		@apply hover:scale-125 transition-all origin-left
+	}
+	.section-header {
+		@apply text-8xl font-bold text-white pb-10
+	}
+	.education-section {
+		@apply md:flex md:justify-center md:flex-col gap-10 pb-10
+	}
+	.education-block {
+		@apply flex w-full max-w-full p-10 bg-white rounded-3xl shadow-2xl shadow-blue-700 items-center
+	}
+	.work-experience-block {
+		@apply flex w-full max-w-full p-10 bg-white rounded-3xl shadow-2xl shadow-blue-700 items-center
+	}
+	.education-section {
+		@apply md:flex md:justify-center md:flex-col gap-10 pb-10
+	}
+}
