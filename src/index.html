@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html class="scroll-smooth">
+<html class="scroll-smooth" lang="en">
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Tristin Xie's personal website. This site includes my aspirations in the field of computer sciences, links to my socials, and my resume in both web and print format.">
 		<title>Tristin Xie</title>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link href="../dist/output.css" rel="stylesheet">
@@ -9,14 +11,25 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 	</head>
-	<body class="overflow-x-hidden">
-		<nav class="text-3xl sticky top-0 left-0 h-24 w-screen bg-black text-white flex items-center gap-12">
-			<a href="#home" class="ml-16 hover:bg-white hover:text-black">Home</a>
-			<a href="#about">About</a>
-			<a href="#resume">Resume</a>
-			<a href="#contact">Contact</a>
+	<body>
+		<nav class="text-3xl sticky top-0 left-0 h-20 w-full bg-black text-white flex items-center gap-12">
+			<a href="#home" class="ml-16 hover:bg-blue-500">Home</a>
+			<a href="#about" class="hover:bg-blue-500">About</a>
+			<div class="dropdown">
+				<button class="dropdown-button">
+					Resume<i class="fa fa-caret-down fa-xl pl-2"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="#education">Education</a>
+					<a href="#work-experience">Work Experience</a>
+					<a href="#leadership-and-activities">Leadership and Activities</a>
+					<a href="#projects">Projects</a>
+					<a href="#skills">Skills</a>
+				</div>
+			</div>
+			<!-- <a href="#contact">Contact</a> -->
 		</nav>
-		<div class="flex justify-center items-center gap-36 bg-blue-500 p-20">
+		<section id="home" class="flex justify-center items-center gap-36 bg-blue-500 p-20">
 			<div class="text-white">
 				<h1 class="text-8xl pb-5">
 					Hello!
@@ -33,8 +46,8 @@
 					<a class="contact-icon" href="https://www.tristinxie.com/resume/out/TristinXieResume.pdf"><i class="fa fa-download fa-2x"> <span class="font-sans">Printable Resume (PDF)</span></i></a>
 				</div>
 			</div>
-			<img src="../assets/Me.jpg" class="rounded-full w-80 hover:rounded-xl transition-all duration-300 ease-in-out">
-		</div>
+			<img src="../assets/Me.jpg" class="rounded-full w-80 hover:rounded-xl transition-all duration-300 ease-in-out" alt="Picture of me, Tristin Xie">
+		</section>
 
 		<div id="about" class="aspect-[960/300] w-full bg-no-repeat bg-center bg-cover bg-top-blue-curve"></div>
 		<section class="about-section">
@@ -49,12 +62,15 @@
 		</section>
 
 		<section class="bg-blue-500" id="resume">
+			<!-- align ruler-->
+			<!-- <div class="h-[5000px] bg-red-500 absolute w-[2px] ml-[615px]"></div> -->
+
 			<div class="aspect-[960/300] w-full bg-no-repeat bg-center bg-cover bg-bottom-blue-curve"></div>
 
 			<h1 class="section-header flex justify-center">Resume</h1>
-			<div class="max-w-screen-xl mx-auto">
+			<div class="max-w-screen-xl mx-auto px-10">
 
-				<h2 class="text-white text-5xl font-semibold" id="education">Education</h2>
+				<h2 id="education" class="text-white text-5xl font-semibold" id="education">Education</h2>
 				<hr class="text-white bg-white h-1 rounded-full w-20 mt-5 mb-5">
 				
 				<div class="education-section">
@@ -69,7 +85,7 @@
 							<h3 class="text-lg pb-3">GPA: 3.768/4.0</h3>
 
 							<details class="text-lg pb-2">
-								<summary class="cursor-pointer">
+								<summary class="cursor-pointer font-bold select-none">
 									Click to show honors
 								</summary>
 								<ul class="list-disc list-outside pl-5">
@@ -79,216 +95,216 @@
 							</details>
 
 							<details class="text-lg">
-								<summary class="cursor-pointer">
+								<summary class="cursor-pointer font-bold select-none">
 									Click to show courses
 								</summary>
-								<h4>Current Courses</h4>
+								<h4 class="font-bold">Current Courses</h4>
 								<ul class="list-disc list-outside pl-5">
 									<li>
-										<a class="course-link" href="https://cse.ucsd.edu/graduate/current-quarter-course-descriptions-recommended-preparation#:~:text=CSE%20291%20(8,WI21/index.html" target="_blank">
+										<a class="course-link" href="https://cse.ucsd.edu/graduate/current-quarter-course-descriptions-recommended-preparation#:~:text=CSE%20291%20(8,WI21/index.html" target="_blank" rel="noopener">
 											CSE 291: ML Method for 3D Geometry Data
 										</a>
 									</li>
 									<li>
-										<a class="course-link" href="https://catalog.ucsd.edu/courses/CSE.html#:~:text=CSE%20151B.%20Deep,as%20space%20permits." target="_blank">
+										<a class="course-link" href="https://catalog.ucsd.edu/courses/CSE.html#:~:text=CSE%20151B.%20Deep,as%20space%20permits." target="_blank" rel="noopener">
 											CSE 151B: Deep Learning
 										</a>
 									</li>
 									<li>
-										<a class="course-link" href="https://catalog.ucsd.edu/courses/CSE.html#:~:text=CSE%20152A.%20Introduction,as%20space%20permits." target="_blank">
+										<a class="course-link" href="https://catalog.ucsd.edu/courses/CSE.html#:~:text=CSE%20152A.%20Introduction,as%20space%20permits." target="_blank" rel="noopener">
 											CSE 152A: Introduction to Computer Vision I
 										</a>
 									</li>
 									<li>
-										<a class="course-link" href="https://catalog.ucsd.edu/courses/MGT.html#:~:text=MGT%2016.%20Personal,and%20intellectual%20property." target="_blank">
+										<a class="course-link" href="https://catalog.ucsd.edu/courses/MGT.html#:~:text=MGT%2016.%20Personal,and%20intellectual%20property." target="_blank" rel="noopener">
 											MGT 16: Personal Ethics at Work
 										</a>
 									</li>
 								</ul>
-								<h4>Previous Courses</h4>
+								<h4 class="font-bold">Previous Courses</h4>
 								<ul class="list-disc list-inside">
 									<li>
-										<a class="course-link" href="https://canvas.ucsd.edu/courses/31520" target="_blank">
+										<a class="course-link" href="https://canvas.ucsd.edu/courses/31520" target="_blank" rel="noopener">
 											CSE 95: Tutor Apprentice
 										</a>
 									</li>
 									<li>
-										<a class="course-link" href="https://catalog.ucsd.edu/courses/CSE.html#:~:text=CSE%20151A.%20Introduction,as%20space%20permits." target="_blank">
+										<a class="course-link" href="https://catalog.ucsd.edu/courses/CSE.html#:~:text=CSE%20151A.%20Introduction,as%20space%20permits." target="_blank" rel="noopener">
 											CSE 151A: Intro to Machine Learning
 										</a>
 									</li>
 									<li>
-										<a class="course-link" href="https://cse.ucsd.edu/undergraduate/cse-191-seminar-computer-science-and-engineering#:~:text=CSE%20191%20A00,enroll%3A%20Application%C2%A0required" target="_blank">
+										<a class="course-link" href="https://cse.ucsd.edu/undergraduate/cse-191-seminar-computer-science-and-engineering#:~:text=CSE%20191%20A00,enroll%3A%20Application%C2%A0required" target="_blank" rel="noopener">
 											CSE 191: Undergraduate Thesis Research Seminar
 										</a>
 									</li>
 									<li>
-										<a class="course-link" href="https://catalog.ucsd.edu/courses/CSE.html#:~:text=CSE%20258.%20Recommender,Prerequisites%3A%20graduate%20standing." target="_blank">
+										<a class="course-link" href="https://catalog.ucsd.edu/courses/CSE.html#:~:text=CSE%20258.%20Recommender,Prerequisites%3A%20graduate%20standing." target="_blank" rel="noopener">
 											CSE 258: Recommender Systems and Web Mining
 										</a>
 									</li>
 									<li>
-										<a class="course-link" href="https://catalog.ucsd.edu/courses/MGT.html#:~:text=MGT%20181.%20Enterprise,or%20ECON%204)." target="_blank">
+										<a class="course-link" href="https://catalog.ucsd.edu/courses/MGT.html#:~:text=MGT%20181.%20Enterprise,or%20ECON%204)." target="_blank" rel="noopener">
 											MGT 181: Enterprise Finance
 										</a>
 									</li>
 									<li>
-										<a class="course-link" href="https://catalog.ucsd.edu/courses/COGS.html#:~:text=COGS%209.%20Introduction,into%20human%20cognition." target="_blank">
+										<a class="course-link" href="https://catalog.ucsd.edu/courses/COGS.html#:~:text=COGS%209.%20Introduction,into%20human%20cognition." target="_blank" rel="noopener">
 											COGS 9: Introduction to Data Science
 										</a>
 									</li>
 									<li>
-										<a class="course-link" href="https://catalog.ucsd.edu/courses/MGT.html#:~:text=MGT%20172.%20Business,upper%2Ddivision%20standing." target="_blank">
+										<a class="course-link" href="https://catalog.ucsd.edu/courses/MGT.html#:~:text=MGT%20172.%20Business,upper%2Ddivision%20standing." target="_blank" rel="noopener">
 											MGT 172: Business Project Management
 										</a>
 									</li>
 									<li>
-										<a class="course-link" href="https://catalog.ucsd.edu/courses/CSE.html#:~:text=CSE%20120.%20Principles,as%20space%20permits." target="_blank">
+										<a class="course-link" href="https://catalog.ucsd.edu/courses/CSE.html#:~:text=CSE%20120.%20Principles,as%20space%20permits." target="_blank" rel="noopener">
 											CSE 120: Principles of Computer Operating Systems
 										</a>
 									</li>
 									<li>
-										<a class="course-link" href="https://catalog.ucsd.edu/courses/CSE.html#:~:text=CSE%20130.%20Programming,as%20space%20permits." target="_blank">
+										<a class="course-link" href="https://catalog.ucsd.edu/courses/CSE.html#:~:text=CSE%20130.%20Programming,as%20space%20permits." target="_blank" rel="noopener">
 											CSE 130: Programing Languages: Principles and Paradigms
 										</a>
 									</li>
 									<li>
-										<a class="course-link" href="https://catalog.ucsd.edu/courses/CSE.html#:~:text=CSE%20142.%20Introduction,as%20space%20permits." target="_blank">
+										<a class="course-link" href="https://catalog.ucsd.edu/courses/CSE.html#:~:text=CSE%20142.%20Introduction,as%20space%20permits." target="_blank" rel="noopener">
 											CSE 142:  Introduction to Computer Architecture: A Software Perspective
 										</a>
 									</li>
 									<li>
-										<a class="course-link" href="https://catalog.ucsd.edu/courses/CSE.html#:~:text=CSE%20142L.%20Software,as%20space%20permits." target="_blank">
+										<a class="course-link" href="https://catalog.ucsd.edu/courses/CSE.html#:~:text=CSE%20142L.%20Software,as%20space%20permits." target="_blank" rel="noopener">
 											CSE 142L: Software Project for Computer Architecture
 										</a>
 									</li>
 									<li>
-										<a class="course-link" href="https://catalog.ucsd.edu/courses/CSE.html#:~:text=CSE%20259.%20Seminar,only.)%20Prerequisites%3A%20none." target="_blank">
+										<a class="course-link" href="https://catalog.ucsd.edu/courses/CSE.html#:~:text=CSE%20259.%20Seminar,only.)%20Prerequisites%3A%20none." target="_blank" rel="noopener">
 											CSE 259: Seminar in Artificial Intelligence
 										</a>
 									</li>
 									<li>
-										<a class="course-link" href="https://catalog.ucsd.edu/courses/MGT.html#:~:text=MGT%20103.%20Product,upper%2Ddivision%20standing." target="_blank">
+										<a class="course-link" href="https://catalog.ucsd.edu/courses/MGT.html#:~:text=MGT%20103.%20Product,upper%2Ddivision%20standing." target="_blank" rel="noopener">
 											MGT 103: Product Marketing and Management
 										</a>
 									</li>
 									<li>
-										<a class="course-link" href="https://catalog.ucsd.edu/courses/CSE.html#:~:text=CSE%20101.%20Design,as%20space%20permits." target="_blank">
+										<a class="course-link" href="https://catalog.ucsd.edu/courses/CSE.html#:~:text=CSE%20101.%20Design,as%20space%20permits." target="_blank" rel="noopener">
 											CSE 101: Design and Analysis of Algorithms
 										</a>
 									</li>
 									<li>
-										<a class="course-link" href="https://catalog.ucsd.edu/courses/CSE.html#:~:text=CSE%20110.%20Software,as%20space%20permits." target="_blank">
+										<a class="course-link" href="https://catalog.ucsd.edu/courses/CSE.html#:~:text=CSE%20110.%20Software,as%20space%20permits." target="_blank" rel="noopener">
 											CSE 110: Software Engineering
 										</a>
 									</li>
 									<li>
-										<a class="course-link" href="https://catalog.ucsd.edu/courses/CSE.html#:~:text=CSE%20140.%20Components,as%20space%20permits" target="_blank">
+										<a class="course-link" href="https://catalog.ucsd.edu/courses/CSE.html#:~:text=CSE%20140.%20Components,as%20space%20permits" target="_blank" rel="noopener">
 											CSE 140: Component and Design Techniques for Digital Systems
 										</a>
 									</li>
 									<li>
-										<a class="course-link" href="https://catalog.ucsd.edu/courses/CSE.html#:~:text=CSE%20140L.%20Digital,as%20space%20permits." target="_blank">
+										<a class="course-link" href="https://catalog.ucsd.edu/courses/CSE.html#:~:text=CSE%20140L.%20Digital,as%20space%20permits." target="_blank" rel="noopener">
 											CSE 140L: Digital Systems Laboratory
 										</a>
 									</li>
 									<li>
-										<a class="course-link" href="https://catalog.ucsd.edu/courses/CSE.html#:~:text=CSE%20100.%20Advanced,as%20space%20permits." target="_blank">
+										<a class="course-link" href="https://catalog.ucsd.edu/courses/CSE.html#:~:text=CSE%20100.%20Advanced,as%20space%20permits." target="_blank" rel="noopener">
 											CSE 100: Advanced Data Structures
 										</a>
 									</li>
 									<li>
-										<a class="course-link" href="https://catalog.ucsd.edu/courses/CSE.html#:~:text=CSE%20103.%20A,as%20space%20permits." target="_blank">
+										<a class="course-link" href="https://catalog.ucsd.edu/courses/CSE.html#:~:text=CSE%20103.%20A,as%20space%20permits." target="_blank" rel="noopener">
 											CSE 103: A Practical Introduction to Probability and Statistics
 										</a>
 									</li>
 									<li>
-										<a class="course-link" href="https://catalog.ucsd.edu/courses/CSE.html#:~:text=CSE%20105.%20Theory,as%20space%20permits." target="_blank">
+										<a class="course-link" href="https://catalog.ucsd.edu/courses/CSE.html#:~:text=CSE%20105.%20Theory,as%20space%20permits." target="_blank" rel="noopener">
 											CSE 105: Theory of Computation
 										</a>
 									</li>
 									<li>
-										<a class="course-link" href="https://catalog.ucsd.edu/courses/MGT.html#:~:text=MGT%2045.%20Principles,and%20investment%20return" target="_blank">
+										<a class="course-link" href="https://catalog.ucsd.edu/courses/MGT.html#:~:text=MGT%2045.%20Principles,and%20investment%20return" target="_blank" rel="noopener">
 											MGT 45: Principles of Accounting
 										</a>
 									</li>
 									<li>
-										<a class="course-link" href="https://philosophy.ucsd.edu/courses/catalog.html#:~:text=28.%20Ethics%20and,Poli.%20Sci.%2027." target="_blank">
+										<a class="course-link" href="https://philosophy.ucsd.edu/courses/catalog.html#:~:text=28.%20Ethics%20and,Poli.%20Sci.%2027." target="_blank" rel="noopener">
 											PHIL 28: Ethics and Society II
 										</a>
 									</li>
 									<li>
-										<a class="course-link" href="https://catalog.ucsd.edu/courses/MATH.html#:~:text=MATH%2018.%20Linear,consent%20of%20instructor." target="_blank">
+										<a class="course-link" href="https://catalog.ucsd.edu/courses/MATH.html#:~:text=MATH%2018.%20Linear,consent%20of%20instructor." target="_blank" rel="noopener">
 											MATH 18: Linear Algebra
 										</a>
 									</li>
 									<li>
-										<a class="course-link" href="https://catalog.ucsd.edu/courses/CSE.html#:~:text=CSE%2021.%20Mathematics,as%20space%20permits." target="_blank">
+										<a class="course-link" href="https://catalog.ucsd.edu/courses/CSE.html#:~:text=CSE%2021.%20Mathematics,as%20space%20permits." target="_blank" rel="noopener">
 											CSE 21: Mathematics for Algorithms and Systems
 										</a>
 									</li>
 									<li>
-										<a class="course-link" href="https://catalog.ucsd.edu/courses/CSE.html#:~:text=CSE%2030.%20Computer,as%20space%20permits." target="_blank">
+										<a class="course-link" href="https://catalog.ucsd.edu/courses/CSE.html#:~:text=CSE%2030.%20Computer,as%20space%20permits." target="_blank" rel="noopener">
 											CSE 30: Computer Organization and Systems Programming
 										</a>
 									</li>
 									<li>
-										<a class="course-link" href="https://catalog.ucsd.edu/courses/HIST.html#:~:text=HIUS%20112.%20The,the%20federal%20government." target="_blank">
+										<a class="course-link" href="https://catalog.ucsd.edu/courses/HIST.html#:~:text=HIUS%20112.%20The,the%20federal%20government." target="_blank" rel="noopener">
 											HIUS 112: The U.S. Civil War
 										</a>
 									</li>
 									<li>
-										<a class="course-link" href="https://philosophy.ucsd.edu/courses/catalog.html#:~:text=27.%20Ethics%20and,WCWP%2011A%2DB." target="_blank">
+										<a class="course-link" href="https://philosophy.ucsd.edu/courses/catalog.html#:~:text=27.%20Ethics%20and,WCWP%2011A%2DB." target="_blank" rel="noopener">
 											PHIL 27: Ethics and Society
 										</a>
 									</li>
 									<li>
-										<a class="course-link" href="https://catalog.ucsd.edu/courses/VIS.html#:~:text=VIS%20152D.%20Identity,upper%2Ddivision%20standing." target="_blank">
+										<a class="course-link" href="https://catalog.ucsd.edu/courses/VIS.html#:~:text=VIS%20152D.%20Identity,upper%2Ddivision%20standing." target="_blank" rel="noopener">
 											VIS 152D: Identity Through Transnational Cinemas
 										</a>
 									</li>
 									<li>
-										<a class="course-link" href="https://catalog.ucsd.edu/courses/ANTH.html#:~:text=ANBI%20116.%20Human,upper%2Ddivision%20standing." target="_blank">
+										<a class="course-link" href="https://catalog.ucsd.edu/courses/ANTH.html#:~:text=ANBI%20116.%20Human,upper%2Ddivision%20standing." target="_blank" rel="noopener">
 											ANBI 116: Human Sexuality in an Evolutionary Perspective
 										</a>
 									</li>
 									<li>
-										<a class="course-link" href="https://catalog.ucsd.edu/courses/CSE.html#:~:text=CSE%2012.%20Basic,as%20space%20permits." target="_blank">
+										<a class="course-link" href="https://catalog.ucsd.edu/courses/CSE.html#:~:text=CSE%2012.%20Basic,as%20space%20permits." target="_blank" rel="noopener">
 											CSE 12: Basic Data Structures and Object-Oriented Design
 										</a>
 									</li>
 									<li>
-										<a class="course-link" href="https://catalog.ucsd.edu/courses/CSE.html#:~:text=CSE%2015L.%20Software,as%20space%20permits." target="_blank">
+										<a class="course-link" href="https://catalog.ucsd.edu/courses/CSE.html#:~:text=CSE%2015L.%20Software,as%20space%20permits." target="_blank" rel="noopener">
 											CSE 15L: Software Tools and Techniques Lab
 										</a>
 									</li>
 									<li>
-										<a class="course-link" href="https://catalog.ucsd.edu/courses/CSE.html#:~:text=CSE%2020.%20Discrete,as%20space%20permits." target="_blank">
+										<a class="course-link" href="https://catalog.ucsd.edu/courses/CSE.html#:~:text=CSE%2020.%20Discrete,as%20space%20permits." target="_blank" rel="noopener">
 											CSE 20: Introduction to Discrete Mathematics
 										</a>
 									</li>
 									<li>
-										<a class="course-link" href="https://catalog.ucsd.edu/courses/WARR.html#:~:text=WCWP%2010B.%20The,Warren%20College%20student." target="_blank">
+										<a class="course-link" href="https://catalog.ucsd.edu/courses/WARR.html#:~:text=WCWP%2010B.%20The,Warren%20College%20student." target="_blank" rel="noopener">
 											WCWP 10B: The Writing Course B
 										</a>
 									</li>
 									<li>
-										<a class="course-link" href="https://catalog.ucsd.edu/courses/ANTH.html#:~:text=ANBI%20141.%20The,upper%2Ddivision%20standing." target="_blank">
+										<a class="course-link" href="https://catalog.ucsd.edu/courses/ANTH.html#:~:text=ANBI%20141.%20The,upper%2Ddivision%20standing." target="_blank" rel="noopener">
 											ANBI 141: The Evolution of Human Diet
 										</a>
 									</li>
 									<li>
-										<a class="course-link" href="https://catalog.ucsd.edu/courses/CSE.html#:~:text=CSE%2011.%20Introduction,as%20space%20permits." target="_blank">
+										<a class="course-link" href="https://catalog.ucsd.edu/courses/CSE.html#:~:text=CSE%2011.%20Introduction,as%20space%20permits." target="_blank" rel="noopener">
 											CSE 11: Introduction to Programming and Computational Problem-Solving: Accelerated Pace
 										</a>
 									</li>
 									<li>
-										<a class="course-link" href="https://catalog.ucsd.edu/courses/MATH.html#:~:text=MATH%2020C.%20Calculus,C%E2%80%93%20or%20better." target="_blank">
+										<a class="course-link" href="https://catalog.ucsd.edu/courses/MATH.html#:~:text=MATH%2020C.%20Calculus,C%E2%80%93%20or%20better." target="_blank" rel="noopener">
 											MATH 20C: Calculus and Analytic Geometry for Science and Engineering
 										</a>
 									</li>
 									<li>
-										<a class="course-link" href="https://catalog.ucsd.edu/courses/WARR.html#:~:text=WCWP%2010A.%20The%20Writing,a%20Warren%20College%20student." target="_blank">
+										<a class="course-link" href="https://catalog.ucsd.edu/courses/WARR.html#:~:text=WCWP%2010A.%20The%20Writing,a%20Warren%20College%20student." target="_blank" rel="noopener">
 											WCWP 10A: The Writing Course A
 										</a>
 									</li>
@@ -310,7 +326,7 @@
 							<h3 class="text-lg pb-3">UC Weighted GPA: 4.31</h3>
 
 							<details class="text-lg">
-								<summary class="cursor-pointer">
+								<summary class="cursor-pointer font-bold select-none">
 									Show more
 								</summary>
 								<ul class="list-disc list-outside pl-5">
@@ -324,7 +340,7 @@
 
 				</div>
 
-				<h2 class="text-white text-5xl font-semibold">Work Experience</h2>
+				<h2 id="work-experience" class="text-white text-5xl font-semibold">Work Experience</h2>
 				<hr class="text-white bg-white h-1 rounded-full w-20 mt-5 mb-5">
 				<div class="work-experience-section">
 					
@@ -333,35 +349,260 @@
 						<div>
 							<h3 class="text-5xl pb-3">UC San Diego Computer Science and Engineering</h3>
 							<h3 class="text-2xl pb-1">Instructional Assistant</h3>
-							<h3 class="text-lg">September 2021 - Present</h3>
-							<h3 class="text-lg pb-3"><span class="fa fa-map-marker fa-lg"></span> San Diego, CA</h3>
-							<ul class="list-disc list-outside pl-5 pb-3">
-								<li>
-									Tested 6 programming assignments, 2 projects, and 20+ reading quizzes regarding advanced data structures such as self balancing binary search trees, tries, hashmaps, bloom filters, and more
-								</li>
-								<li>
-									Tutored students that are stuck with their programs or on conceptual questions for a combined 40+ hourss
-								</li>
-							</ul>
+							<div class="pl-4">
+								<h3 class="text-lg">September 2021 - Present</h3>
+								<h3 class="text-lg pb-3"><span class="fa fa-map-marker fa-lg"></span> San Diego, CA</h3>
+								<ul class="list-disc list-outside text-lg pl-5 pb-3">
+									<li>
+										Tested 6 programming assignments, 2 projects, and 20+ reading quizzes regarding advanced data structures such as <b>self balancing binary search trees, tries, hashmaps, bloom filters, and more</b>
+									</li>
+									<li>
+										Tutored students that are stuck with their programs or on conceptual questions for a combined <b>40+ hours</b>
+									</li>
+								</ul>
+							</div>
 							<h3 class="text-2xl pb-1">Project Mentor</h3>
-							<h3 class="text-lg">July 2021 - September 2021</h3>
-							<h3 class="text-lg pb-3"><span class="fa fa-map-marker fa-lg"></span> San Diego, CA</h3>
-							<ul class="list-disc list-outside pl-5">
-								<li>
-									Tested 6 programming assignments, 2 projects, and 20+ reading quizzes regarding advanced data structures such as self balancing binary search trees, tries, hashmaps, bloom filters, and more
-								</li>
-								<li>
-									Tutored students that are stuck with their programs or on conceptual questions for a combined 40+ hourss
-								</li>
-							</ul>
+							<div class="pl-4">
+								<h3 class="text-lg">July 2021 - September 2021</h3>
+								<h3 class="text-lg pb-3"><span class="fa fa-map-marker fa-lg"></span> San Diego, CA</h3>
+								<ul class="list-disc list-outside text-lg pl-5">
+									<li>
+										Vetted <b>3 out of the total 9 labs</b> with <b>reported 40+ problems</b> to ensure a smooth learning experience for the <b>55 student mentees</b>
+									</li>
+									<li>
+										Mentored the games project area where student mentees will have one week to create a final game project in <b>Pygame</b>
+									</li>
+									<li>
+										Tutored <b>10+ hours</b> on topics such as <b>algorithms, recursion, state machines, Pygame, Python, and image manipulation</b>
+									</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 
+					<div class="work-experience-block">
+						<img class="w-72 h-64 mr-10" src="../assets/BrilliantBiome.jpg" alt="BrilliantBiome logo"/>
+						<div>
+							<h3 class="text-5xl pb-3">BrilliantBiome</h3>
+							<h3 class="text-2xl pb-1">Research Intern</h3>
+							<div class="pl-4">
+								<h3 class="text-lg">March 2021 - Present</h3>
+								<h3 class="text-lg pb-3"><span class="fa fa-map-marker fa-lg"></span> San Diego, CA</h3>
+								<ul class="list-disc list-outside pl-5 pb-3 text-lg">
+									<li>
+										Wrote a <b>Bash script and Jupyter notebook</b> that timed a bioinformatics package's (QIIME2) commands compared to its Python API on <b>Amazon Web Services Sagemaker Studio</b> which resulted in up to <b>7 times speedup</b> of certain computations
+									</li>
+									<li>
+										Extending a <b>natural language processing</b> tool that analyzes PubMed abstracts to accept queries pertaining to our research
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<h2 id="leadership-and-activities" class="text-white text-5xl font-semibold">Leadership and Activities</h2>
+				<hr class="text-white bg-white h-1 rounded-full w-20 mt-5 mb-5">
+				<div class="leadership-section">
+
+					<div class="leadership-block">
+						<img class="w-64 h-64 mr-[3.25rem] ml-5" src="../assets/acm_logo_white.png" alt="ACM at UCSD light theme logo">
+						<div>
+							<h3 class="text-5xl pb-3">Association for Computing Machinery at UC San Diego</h3>
+							<h3 class="text-2xl pb-1">Vice President Finance</h3>
+							<div class="pl-4">
+								<h3 class="text-lg">May 2021 - Present</h3>
+								<h3 class="text-lg pb-3"><span class="fa fa-map-marker fa-lg"></span> San Diego, CA</h3>
+								<ul class="list-disc list-outside pl-5 pb-3 text-lg">
+									<li>
+										Directed the finance team to create financial forms and budget proposals to <b>obtain funding</b> for <b>200+ events</b> from school departments and student government
+									</li>
+									<li>
+										Managed and budgeted <b>thousands of dollars</b> of department funds, sponsorship money, and other miscellaneous University allocated funds
+									</li>
+								</ul>
+							</div>
+
+							<h3 class="text-2xl pb-1">ACM Projects Project Manager</h3>
+							<div class="pl-4">
+								<h3 class="text-lg">Jan. 2021 - Mar. 2021</h3>
+								<h3 class="text-lg pb-3"><span class="fa fa-map-marker fa-lg"></span> San Diego, CA</h3>
+								<ul class="list-disc list-outside pl-5 pb-3 text-lg">
+									<li>
+										Oversaw a team of <b>5 developers and designers</b> to complete the project of making a UCSD wiki in a school quarter
+									</li>
+									<li>
+										Led weekly retrospective and scrum meetings as well as managing the <b>CI/CD pipeline</b> and <b>Agile process</b> on GitHub
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<h2 id="projects" class="text-white text-5xl font-semibold">Projects</h2>
+				<hr class="text-white bg-white h-1 rounded-full w-20 mt-5 mb-5">
+
+				<div class="projects-section">
+
+					<div class="projects-block">
+						<img class="object-cover rounded-t-3xl" src="../assets/acm_teammate_finder.png" alt="Preview of ACM Teammate Finder">
+						<div class="bg-white p-5">
+							<h3 class="text-2xl font-bold">
+								ACM Teammate Finder
+							</h3>
+							<h3 class="text-xl pb-2">Web App To Find Teammates Easily</h3>
+							<h3 class="text-lg pb-2">
+								Role: Full-stack developer
+							</h3>
+							<details class="text-lg">
+								<summary class="cursor-pointer font-bold select-none">
+									Click to see details
+								</summary>
+								<ul class="list-disc list-outside pl-5">
+									<li>
+										Implemented dynamic <b>Material Design</b> webpages with <b>React, HTML/CSS, and React Material Web Components</b>
+									</li>
+									<li>
+										Developed <b>CRUD functions</b> for back‑end using <b>Express</b> to fetch and post updates to the <b>Firestore</b> database.
+									</li>
+									<li>
+										Collaborated with a full team including a project manager, full-stack developers, and a designer
+									</li>
+								</ul>
+							</details>
+						</div>
+						<footer class="flex bg-black rounded-b-3xl h-12 text-white pl-5 pt-3 gap-5">
+							<a class="projects-icon" href="https://github.com/LelandTLong/ACM_Project" target="_blank" rel="noopener"><i class="fa fa-github fa-lg"> <span class="font-sans">GitHub</span></i></a>
+						</footer>
+					</div>
+
+
+					<div class="projects-block">
+						<img class="object-cover rounded-t-3xl aspect-[324.33/169.06]" src="../assets/envirosense.png" alt="Preview of EnviroSense device">
+						<div class="bg-white p-5">
+							
+							<h3 class="text-2xl font-bold">
+								EnviroSense
+							</h3>
+							<h3 class="text-xl pb-2">Internet of Things Pollution Sensor</h3>
+							<h3 class="text-lg pb-2">
+								Role: Developer
+							</h3>
+							<details class="text-lg">
+								<summary class="cursor-pointer font-bold select-none">
+									Click to see details
+								</summary>
+								<ul class="list-disc list-outside pl-5">
+									<li>
+										<b>SDHacks WINNER (3rd):</b> Best IoT that Incorporates Multiple Nodes (team of 4)
+									</li>
+									<li>
+										Built a sensor node prototype which measures pollutant and environmental data from the ambient environment
+									</li>
+									<li>
+										Uploaded data to <b>Firebase</b> database which can be retrieved and displayed by the <b>Android app</b>
+									</li>
+								</ul>
+							</details>
+						</div>
+						<footer class="flex bg-black rounded-b-3xl h-12 text-white pl-5 pt-3 gap-5">
+							<a class="projects-icon" href="https://github.com/jerukan/EnviroSense" target="_blank" rel="noopener"><i class="fa fa-github fa-lg"> <span class="font-sans">GitHub</span></i></a>
+							<a class="projects-icon" href="https://devpost.com/software/envirosense" target="_blank" rel="noopener"><img class="h-7 pr-1" src="../assets/devpost-icon.svg" alt="Devpost logo"> <span class="font-sans text-xl">Devpost</span></i></a>
+						</footer>
+					</div>
+
+					<div class="projects-block">
+						<img class="object-cover rounded-t-3xl aspect-[324.33/169.06]" src="../assets/five_dollar_face.jpg" alt="Preview of PictureTranslate detection output">
+						<div class="bg-white p-5">
+							
+							<h3 class="text-2xl font-bold">
+								PictureTranslate
+							</h3>
+							<h3 class="text-xl pb-2">Computer Vision Object Translator</h3>
+							<h3 class="text-lg pb-2">
+								Role: Developer
+							</h3>
+							<details class="text-lg">
+								<summary class="cursor-pointer font-bold select-none">
+									Click to see details
+								</summary>
+								<ul class="list-disc list-outside pl-5">
+									<li>
+										Pair programmed and trained <b>Haar Cascades</b> on 4 different smartphones, 4 denominations of money, and more
+									</li>
+									<li>
+										Takes video feed and pauses with translation of object to the <b>100+ languages</b> using the <b>Google Translate API</b>
+									</li>
+								</ul>
+							</details>
+						</div>
+						<footer class="flex bg-black rounded-b-3xl h-12 text-white pl-5 pt-3 gap-5">
+							<a class="projects-icon" href="https://github.com/ucsd-cse-spis-2019/project-tristin-caroline" target="_blank" rel="noopener"><i class="fa fa-github fa-lg"> <span class="font-sans">GitHub</span></i></a>
+						</footer>
+					</div>
+				</div>
+
+
+				<h2 id="skills" class="text-white text-5xl font-semibold">Skills</h2>
+				<hr class="text-white bg-white h-1 rounded-full w-20 mt-5 mb-5">
+				<div class="skills-section">
+					<div class="skills-block">
+						<h3 class="text-5xl pb-3 w-full">Languages</h3>
+						<img class="object-cover h-32" src="../assets/skills/languages/Java_programming_language_logo.svg" alt="Java logo">
+						<img class="h-32" src="../assets/skills/languages/380px-C_Programming_Language.svg.png" alt="C logo">
+						<img class="h-32" src="../assets/skills/languages/ISO_C++_Logo.svg" alt="C++ logo">
+						<img class="object-cover h-32 w-32" src="../assets/skills/languages/Python-Symbol.png" alt="Python logo">
+						<img class="h-32" src="../assets/skills/languages/Unofficial_JavaScript_logo_2.svg" alt="JavaScript logo">
+						<img class="h-32" src="../assets/skills/languages/haskell.svg" alt="Haskell logo">
+						<img class="h-32" src="../assets/skills/languages/HTML5_logo_and_wordmark.svg" alt="HTML5 logo">
+						<img class="h-32" src="../assets/skills/languages/CSS3_logo_and_wordmark.svg" alt="CSS3 logo">
+						<img class="h-32" src="../assets/skills/languages/arm-logo.jpg" alt="ARM logo">
+						<img class="h-32" src="../assets/skills/languages/Gnu-bash-logo.svg" alt="GNU Bash logo">
+						<img class="h-32" src="../assets/skills/languages/LaTeX_logo.svg" alt="LaTeX logo">
+					</div>
+				</div>
+				<div class="skills-section">
+					<div class="skills-block">
+						<h3 class="text-5xl pb-3 w-full">Frameworks and Tools</h3>
+						<img class="h-32" src="../assets/skills/framework/Git-logo.svg" alt="Git logo">
+						<img class="h-32" src="../assets/skills/framework/reactjs.png" alt="React.js logo">
+						<img class="h-16" src="../assets/skills/framework/Node.js_logo.svg" alt="Node.js logo">
+						<img class="h-32" src="../assets/skills/framework/Expressjs.png" alt="Express.js logo">
+						<img class="h-32" src="../assets/skills/framework/gdb_logo.jfif" alt="GDB logo">
+						<img class="h-32" src="../assets/skills/framework/valgrind_logo.png" alt="Valgrind logo">
+						<img class="h-32" src="../assets/skills/framework/Firebase_Logo.svg" alt="Firebase logo">
+						<img class="h-32" src="../assets/skills/framework/OpenCV_Logo_with_text_svg_version.svg" alt="OpenCV logo">
+						<img class="h-32" src="../assets/skills/framework/jest.png" alt="Jest logo">
+						<img class="h-32" src="../assets/skills/framework/Amazon_Web_Services_Logo.svg" alt="Amazon Web Services logo">
+						<img class="h-16" src="../assets/skills/framework/Netlify_logo.svg" alt="Netlify logo">
+						<img class="h-32" src="../assets/skills/framework/PyTorch_logo_black.svg" alt="PyTorch logo">
+						<img class="object-cover h-36 w-64" src="../assets/skills/framework/tailwind-css-logo-vector.png" alt="Tailwind CSS logo">
+					</div>
+				</div>
+				<div class="skills-section">
+					<div class="skills-block">
+						<h3 class="text-5xl pb-3 w-full">Software</h3>
+						<img class="h-32" src="../assets/skills/software/Vimlogo.svg" alt="Vim logo">
+						<img class="h-32" src="../assets/skills/software/Visual_Studio_Code_1.35_icon.svg" alt="Visual Studio Code logo">
+						<img class="h-32" src="../assets/skills/software/Android_Studio_Trademark.svg" alt="Android Studio logo">
+						<img class="h-32" src="../assets/skills/software/Adobe_Illustrator_CC_icon.svg" alt="Adobe Illustrator logo">
+					</div>
 				</div>
 			</div>
+
 		</section>
-		<section id="contact" class="bg-blue-300">
+
+		<!-- <section id="contact" class="bg-blue-300">
 			<h1 class="section-header">Contact Me</h1>
-		</section>
+		</section> -->
+		<footer id="footer" class="bg-black w-full text-white h-32 flex flex-col justify-center items-center">
+			<p>
+				Website made from scratch with HTML5 and Tailwind CSS.
+			</p>
+			<p>
+				All copyrights for all the images on this page belong to their respective owners.
+			</p>
+		</footer>
 	</body>
 </html>
