@@ -939,6 +939,10 @@ video {
   margin-left: 1.25rem;
 }
 
+.ml-7 {
+  margin-left: 1.75rem;
+}
+
 .ml-\[615px\] {
   margin-left: 615px;
 }
@@ -957,18 +961,6 @@ video {
 
 .mt-5 {
   margin-top: 1.25rem;
-}
-
-.ml-7 {
-  margin-left: 1.75rem;
-}
-
-.ml-8 {
-  margin-left: 2rem;
-}
-
-.ml-10 {
-  margin-left: 2.5rem;
 }
 
 .box-border {
@@ -1133,14 +1125,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-7 {
-  width: 1.75rem;
-}
-
-.w-8 {
-  width: 2rem;
 }
 
 .max-w-5xl {
