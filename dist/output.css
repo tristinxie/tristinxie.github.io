@@ -37,8 +37,6 @@
     --font-sans: Roboto, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
     Segoe\UI, Helvetica\Neue, Arial, Noto\Sans, sans-serif, Apple\Color\Emoji,
     Segoe\UI\Emoji, Segoe\UI\Symbol, Noto\Color\Emoji;
-    --background-image-top-blue-curve: url('../assets/top-blue-curve.svg');
-    --background-image-bottom-blue-curve: url('../assets/bottom-blue-curve.svg');
   }
 }
 @layer base {
@@ -583,11 +581,11 @@
   .bg-white {
     background-color: var(--color-white);
   }
-  .bg-bottom-blue-curve {
-    background-image: var(--background-image-bottom-blue-curve);
+  .bg-\[url\(\.\.\/assets\/bottom-blue-curve\.svg\)\] {
+    background-image: url(../assets/bottom-blue-curve.svg);
   }
-  .bg-top-blue-curve {
-    background-image: var(--background-image-top-blue-curve);
+  .bg-\[url\(\.\.\/assets\/top-blue-curve\.svg\)\] {
+    background-image: url(../assets/top-blue-curve.svg);
   }
   .bg-cover {
     background-size: cover;
